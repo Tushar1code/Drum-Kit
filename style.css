@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Recursive:wght@300..1000&display=swap");
+body {
+  background-color: #283149;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+}
+
+.title {
+  height: 95px;
+  text-align: center;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  font-size: 18px;
+  text-shadow: 3px 0 #da0463;
+}
+
+.main {
+  height: 270px;
+
+  display: flex;
+  justify-content: center;
+}
+
+#hotkeys {
+  display: grid;
+
+  grid-template-areas: "q w e d";
+  grid-template-rows: 100px;
+  grid-auto-rows: 100px;
+  grid-row-gap: 10px;
+  grid-gap: 30px;
+ width: 40%;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  height: 265px;
+  width: 436px;
+  display: flex;
+  justify-content: center;
+}
+
+.drum-no-hit {
+  background-color: #292931;
+  color: whitesmoke;
+}
+
+.drum-btn {
+  border-radius: 10px;
+  border: 5px solid purple;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 0.27);
+font-weight: bolder;
+  font-size: 18px;
+}
+.key-map-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 600px;
+  background: #292931;
+  width: 250px;
+  z-index: 3;
+  font-size: 30px;
+  color: whitesmoke;
+}
+h2 {
+  text-align: center;
+  color: red;
+}
+h1 {
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  background-color: #292931;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+.footer a {
+  color: white;
+}
+

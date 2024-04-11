@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="title">
+        <h1>Drum 🥁 Kit</h1>
+    </div>
+    <div class="main">
+        <img src="./Drum image/Drum-kit.png" alt="drumkit" usemap="#drumkit-map" draggable="false" width="450" />
+
+        <map id="drumkit-map" name="drumkit-map">
+            <area shape="poly" coords="146, 170, 220, 171, 234, 181, 233, 199, 220, 220, 152, 212"
+                data-drum-id="snare" />
+            <area shape="circle" coords="237, 123, 39" data-drum-id="tom1" />
+            <area shape="circle" coords="319, 123, 39" data-drum-id="tom2" />
+            <area shape="rect" coords="327, 170, 424, 218" data-drum-id="tom3" />
+            <area shape="circle" coords="272, 252, 55" data-drum-id="kick-bass" />
+            <area shape="rect" coords="321, 18, 413, 61" data-drum-id="crash2" />
+            <area shape="rect" coords="151, 0, 241, 40" data-drum-id="crash1" />
+            <area shape="rect" coords="17, 72, 126, 134" data-drum-id="hihat" />
+        </map>
+    </div>
+    <div class="key-map-wrapper">
+        <h2>Key Mapping</h2>
+        <ul class="key-map-list">
+            <li>
+                <kbd class="key-code">E</kbd>
+                <span class="key-sound">Crash</span>
+            </li>
+            <li>
+                <kbd class="key-code">W</kbd>
+                <span class="key-sound">Snare</span>
+            </li>
+            <li>
+                <kbd class="key-code">Q</kbd>
+                <span class="key-sound">Crash2</span>
+            </li>
+            <li>
+                <kbd class="key-code">D</kbd>
+                <span class="key-sound">Snare</span>
+            </li>
+            <li>
+                <kbd class="key-code">K</kbd>
+                <span class="key-sound">Tom-high2</span>
+            </li>
+            <li>
+                <kbd class="key-code">O</kbd>
+                <span class="key-sound">Tom-mid2</span>
+            </li>
+            <!-- -->
+            <li>
+                <kbd class="key-code">P</kbd>
+                <span class="key-sound">Tom-low3</span>
+            </li>
+            <li>
+                <kbd class="key-code">S</kbd>
+                <span class="key-sound">Kick-bass space</span>
+            </li>
+
+        </ul>
+    </div>
+    <div id="hotkeys" class="hotkeys">
+        <button class="drum-btn drum-no-hit" data-drum-id="hihat" data-hotkey="q">
+            Q
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="crash1" data-hotkey="w">
+            <!--  crash 1 W -->W
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="crash2" data-hotkey="e">
+            <!-- Crash 2<br />E -->E
+        </button>
+        <button class="drum-btn drum-no-hit " data-drum-id="snare" data-hotkey="d">
+            <!-- Snare<br />D -->D
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="tom1" data-hotkey="k">
+            <!-- Tom 1<br />K -->K
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="tom2" data-hotkey="o">
+            <!-- Tom 2<br /> O -->o
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="tom3" data-hotkey="p">
+            <!-- Tom 3<br />P  -->P
+        </button>
+        <button class="drum-btn drum-no-hit" data-drum-id="kick-bass" data-hotkey=" ">
+            <!-- Kick Bass<br />Space --> S
+        </button>
+    </div>
+
+    <br>
+    <br>
+    <footer>
+        <div class="footer">
+            Copyright &copy; Tushar<br>
+            More About: <a href="https://www.linkedin.com/in/tushar-aambatawar-301a30224/">linkdlin</a> <span><a
+                    href="https://github.com/Tushar1code">github</a></span>
+
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
